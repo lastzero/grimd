@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  grimd:
+    build: .
+    image: lastzero/grimd:latest
+    volumes:
+      - "./sources:/app/sources"
+      - "./grimd.toml:/app/grimd.toml"
+      - ".:/go/src/github.com/looterz/grimd"
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"

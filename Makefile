@@ -1,3 +1,7 @@
+.PHONY: dockerhub
+dockerhub:
+	docker login -u lastzero
+	docker push lastzero/grimd:latest
 .PHONY: profile
 profile:
 	@mkdir -p pprof/
