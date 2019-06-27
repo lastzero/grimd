@@ -1,6 +1,6 @@
 .PHONY: dockerhub
 dockerhub:
-	docker login -u lastzero
+	docker login
 	docker push lastzero/grimd:latest
 .PHONY: profile
 profile:

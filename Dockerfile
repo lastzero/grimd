@@ -1,5 +1,6 @@
 FROM golang
-LABEL mantainer="integrii@gmail.com"
+
+LABEL maintainer="Michael Mayer <michael@liquidbytes.net>"
 
 COPY *.go /go/src/github.com/looterz/grimd/
 WORKDIR /go/src/github.com/looterz/grimd
